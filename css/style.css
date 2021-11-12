@@ -1,0 +1,451 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body {
+    overflow-x: hidden;
+}
+.container {
+    width: 1100px;
+    margin:0 auto;
+}
+header {
+    background-image: url('../images/header-bg.png');
+    width: 100%;
+    height: 1100px;
+    background-position: center center;
+    background-size:cover;
+}
+nav {
+    position: fixed;
+    top: 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:20px;
+    width: 100%;
+    transition: 0.6s; 
+}
+#logo {
+    margin-left: 50px;
+}
+.turn {
+    transform: rotate(90deg);
+    transition:0.5s;
+}
+.nav_links ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+.nav_links ul li a {
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15.89px;
+    color: #fff;
+    line-height: 45px;
+}
+.nav_links ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+nav .nav_toggle {
+    color:#fff;
+    background:transparent;
+    position:absolute;
+    right:0;
+    border:none;
+    visibility:hidden;
+    font-size:30px;
+}
+.sticky {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding-bottom:10px; 
+}
+.sticky ul {
+    margin-bottom: 0; 
+}
+.sticky ul li {
+    transition: 0.6s;
+    font-size: 0.8em; 
+}
+.header_text {
+    padding-top: 150px;
+    text-align: center;
+}
+.header_text h2{
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 45px;
+}
+.header_text p {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    margin-top:20px;
+}
+#download, #contact {
+    margin-top:30px;
+    border-radius: 5px;
+    padding:12px 50px;
+}
+#download {
+    margin-right:50px;
+    border:none;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    transition:0.5s;
+}
+#contact {
+    border:2px solid #fff;
+    background-color: rgba(255,0,0,0.0);
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    transition:0.5s;
+}
+button:hover {
+    cursor: pointer;
+}
+#download:hover {
+    transition:0.5s;
+    background-color: rgba(255,0,0,0.0);
+    outline:2px solid #fff;
+    color:#fff;
+}
+#contact:hover {
+    background-color: #fff;
+    transition:0.5s;
+    color: #000;
+}
+.marketing_1_phone {
+    display: none;
+}
+.marketing_1 {
+    background-color: #fafafc;
+    padding: 200px 0 150px 0;
+    height: auto;
+}
+.marketing_content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-flow: wrap;
+}
+.marketing_content .box {
+    background-color: #fff;
+    padding:0 10px;
+    width: 270px;
+    height: auto;
+    margin-top:50px;
+    text-align: center;
+    border-radius: 7px;
+    padding-bottom: 40px;
+    box-shadow: 0px 6px 9px 0px rgba(35, 49, 37, 0.1);
+}
+.marketing_content .box img{
+    margin-top: 50px;
+}
+.marketing_content .box h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top:30px;
+}
+.marketing_content .box p {
+    margin-top:10px;
+    line-height: 2;
+    color:#6a6d89;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.marketing_2 {
+    padding: 100px 0;
+    background-color: #fff;
+}
+.marketing_downloadNow {
+    padding-top: 100px;
+    width: 40%;
+    text-align: right;
+}
+.marketing_downloadNow h2 {
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+    color: #233148;
+    font-size: 30px;
+}
+.marketing_downloadNow p {
+    margin-top: 30px;
+    font-family: 'Work Sans', sans-serif;
+    color: #233148;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+}
+#download_Free {
+    background-color: #33d2fd;
+    color:#fff;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.marketing_2 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.marketing_boxes {
+    width: 40%;
+}
+.marketing_boxes .boxes {
+    background-color: #fff;
+    padding:25px;
+    width: 100%;
+    height: auto;
+    margin-top:20px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0px 6px 9px 0px rgba(35, 49, 37, 0.1);
+}
+.marketing_boxes .boxes h2 {
+    line-height: 29px;
+    font-family: 'Work Sans', sans-serif;
+    color: #233148;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+.marketing_boxes .boxes p {
+    line-height: 29px;
+    font-family: 'Work Sans', sans-serif;
+    color: #233148;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+    color: #fff;
+}
+.marketing_boxes .boxes span {
+    display: flex;
+    flex-direction: row;
+}
+.marketing_textbox {
+    display:block;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.marketing_textbox--open {
+    opacity: 1;
+    height: 7rem;
+}
+.boxes:hover {
+    background-color: #33d2fd;
+    transition: all 0.5s;
+}
+.boxes:hover > p {
+    opacity: 1;
+    height: 7rem;
+    transition: all 0.5s;
+}
+.marketing_3 {
+    background-color: #fafafc;
+    padding: 100px 0;
+}
+.marketing_3 .container{
+    display:grid;
+    grid-template-columns: 50% 40%;
+    grid-gap: 100px;
+}
+.code_text h2 {
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    margin: 10px 0 40px 0;
+}
+.code_text p {
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 40px;
+    line-height: 2;
+}
+.code_text span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.code_text span img {
+    margin-right: 20px;
+}
+.download_section {
+    background-image: url('../images/marketing_bg.png');
+    background-position: center center;
+    background-size:cover;
+    width: 100%;
+    height: 764px;
+}
+.download_section .container {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.phone_download { 
+    width: 50%;
+    text-align: center;
+}
+.download_text {
+    margin-top: 150px;
+    width: 50%;
+}
+.download_text h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    color: #233148;
+    font-size: 30px;
+}
+.download_text p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 2;
+    font-size: 14px;
+    margin:30px 0;
+}
+.download_buttons a:nth-child(2) {
+    margin-left: 30px;
+}
+.get_the_app {
+    position: relative;
+    background-image: url('../images/gettheapp.png');
+    width: 371px;
+    height: 70px;
+    margin:0 auto;
+    margin-top: -40px;
+    box-shadow: 0px 11px 29px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.get_the_app h2 {
+    color: #fff;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+.information {
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+.information .links {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.information .links ul{
+    padding: 20px 20px;
+    list-style-type: none; 
+}
+.information .links ul li {
+    line-height: 2;
+}
+.information .links ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+.information .links_head {
+    color: #233148;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 20px;
+}
+.information .subscribe {
+    margin-top: 100px;
+    text-align: center;
+}
+.information .subscribe h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #233148;
+}
+.information .subscribe p {
+    margin-top: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #233148;
+}
+.information .subscribe input[type=email] {
+    background-color: #f6f7fb;
+    border: none;
+    width: 60%;
+    height: 50px;
+    padding: 0 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+.information form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.information #subscribe {
+    background-color: #33d2fd;
+    border: none;
+    height: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #233148;
+    margin-left: 20px;
+    padding:0 25px;
+}
+footer {
+    background: #233148;
+    min-height: 100px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .copyrights {
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 100px;
+}
+footer .social_media {
+    line-height: 100px;
+}
+footer .social_media ul{
+    list-style-type: none; 
+    display: flex;
+}
+footer .social_media li {
+    margin-right: 25px;
+}
+footer .social_media li:nth-child(5) {
+    margin: 0;
+}
+footer .social_media li a{
+    font-size: 25px;
+    color: #fff;
+}

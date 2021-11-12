@@ -1,0 +1,104 @@
+@media only screen and (min-width: 1200px) {
+    .marketing_1_phone {
+        display: block;
+    }
+    .marketing_1 {
+        background-color: #fafafc;
+        height: auto;
+    }
+    .marketing_1 .container {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+    }
+    .marketing_content {
+        display: block;
+    }
+    .marketing_1_phone {
+        text-align: center;
+    }
+    .marketing_content .box {
+        padding-top: 30px;
+        height: auto;
+    }
+
+    .first_section .box:nth-child(1){
+        margin-top:-90px;
+        margin-left: 20px;
+    }
+    .first_section .box:nth-child(2){
+        margin-top: 66px;
+        margin-left: -40px;
+    }
+    .second_section .box {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .second_section .box:nth-child(2) {
+        margin-left: -10px;
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    nav {
+        background-color:rgba(0,0,0,0.7);
+        padding: 10px 0;
+    }
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+    .nav_links {
+        width: 100%;
+    }
+    nav .nav_toggle {
+        visibility:visible;
+        transition:0.5s;
+        margin-right:20px;
+        height:45px;
+    }
+    .nav_links .link_list{
+        overflow:hidden;
+        height: 0;
+        transition:0.5s;
+    }
+    .nav_links ul li {
+        margin-top:10px;
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        transition: 0.5s;
+    }
+      .nav_links .show_links {
+         z-index:10;
+         height: 220px;
+         transition:0.4s;
+    }
+    .header_text h2{
+        font-size: 40px;
+    }
+    footer .container{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 80%;
+    }
+    .marketing_downloadNow {
+        width: 100%;
+        text-align: justify;
+    }
+    .marketing_boxes {
+        width: 100%;
+    }
+    .marketing_3 .container{
+        display:grid;
+        grid-template-columns: 100%;
+    }
+    .phone_download {
+        display: none;
+    }
+    .download_text {
+        width: 100%;
+    }
+}
